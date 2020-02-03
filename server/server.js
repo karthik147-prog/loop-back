@@ -4,12 +4,12 @@
 // License text available at https://opensource.org/licenses/MIT
 
 'use strict';
-
+const RestApplication = require('@loopback/rest');
 const loopback = require('loopback');
 const boot = require('loopback-boot');
 
 const app = module.exports = loopback();
-
+app.set('port',process.env.PORT || 4000);
 app.start = function() {
   // start the web server
   return app.listen(function() {
