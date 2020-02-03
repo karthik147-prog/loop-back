@@ -4,7 +4,6 @@
 // License text available at https://opensource.org/licenses/MIT
 
 'use strict';
-const RestApplication = require('@loopback/rest');
 const loopback = require('loopback');
 const boot = require('loopback-boot');
 
